@@ -1,3 +1,3 @@
 # core-services
-[core-services](profile/coreservices.md)
+[core-services](coreservices.md)
 

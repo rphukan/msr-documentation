@@ -13,6 +13,9 @@ and some other repos like
 - Open API specifications
 - Config files for the config server
 
+# Deployment Architecture
+### The Components
+
 ![Components](assets/msr-components.png)
 
 # The mono repos

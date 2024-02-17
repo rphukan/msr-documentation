@@ -24,8 +24,7 @@ and some other repos like
 [documents-service](documentsservice.md)
 ## lending-services
 [lending-services](lendingservices.md)
-## others
-[others](others.md)
+
 ##Identity Provider
 [Identity Provider](identityprovider.md)
 ##MongoDB

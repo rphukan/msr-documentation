@@ -17,7 +17,7 @@ and some other repos like
 ## security-libraries
 Some shared libraries (jars) for handling the security across different microservices. Visit [this link](securitylibraries.md) for more details.
 
-## core-services
+### core-services
 These are the core services which hanldes things like authentication, service discovery, config management, smart routing etc. Click [this link](coreservices.md) for more details.
 
 ## shared-services

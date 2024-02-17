@@ -15,19 +15,27 @@ and some other repos like
 
 # The mono repos
 ## security-libraries
+Some shared libraries (jars) for handling the security across different microservices. Visit the link below for more details.
 [security-libraries](securitylibraries.md)
 ## core-services
+These are the core services which hanldes things like authentication, service discovery, config management, smart routing etc. Click the link below for more details.
 [core-services](coreservices.md)
 ## shared-services
+Some common services shared across different applications within the org. More details on the link below
 [shared-services](sharedservices.md)
 ## documents-service
+The document managment solution for the org. More details on the link below
 [documents-service](documentsservice.md)
 ## lending-services
+These constitute the LOS application. Click on the link below for more details
 [lending-services](lendingservices.md)
 ## others
+There are some more repos for Terraform Scrpts, APi spec etc. More details about it is on the link below
 [others](others.md)
 
-## Identity Provider
+## Identity And Access Management
+We are using the open source [Keycloak](https://www.keycloak.org) for Identity and Access Management. More details about it is on the link below
 [Identity Provider](identityprovider.md)
 ## MongoDB
+Some of the applications within the org uses the MongoDB document database. More details about it is on the link below
 [MongoDB](mongodb.md)

@@ -13,7 +13,7 @@ and some other repos like
 - Open API specifications
 - Config files for the config server
 
-assets/msr-components.png
+![Components](assets/msr-components.png)
 
 # The mono repos
 ### security-libraries

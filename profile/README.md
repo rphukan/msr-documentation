@@ -13,6 +13,8 @@ and some other repos like
 - Open API specifications
 - Config files for the config server
 
+assets/msr-components.png
+
 # The mono repos
 ### security-libraries
 Some shared libraries (jars) for handling the security across different microservices. Visit [this link](securitylibraries.md) for more details.

@@ -1,5 +1,5 @@
 # About the Org
-It contains some repos which are going to be used by all the applications withing the org. Like
+It contains some repos which are going to be used by all the applications within the org. Like
 - some shared libraries for handling the security aspects of the applications
 - few core services which need to be run first
 - some shared services

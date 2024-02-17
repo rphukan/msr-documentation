@@ -14,22 +14,22 @@ and some other repos like
 - Config files for the config server
 
 # The mono repos
-## security-libraries
+### security-libraries
 Some shared libraries (jars) for handling the security across different microservices. Visit [this link](securitylibraries.md) for more details.
 
 ### core-services
 These are the core services which hanldes things like authentication, service discovery, config management, smart routing etc. Click [this link](coreservices.md) for more details.
 
-## shared-services
+### shared-services
 Some common services shared across different applications within the org. More details on [this link](sharedservices.md)
 
-## documents-service
+### documents-service
 The document managment solution for the org. More details on [this link](documentsservice.md)
 
-## lending-services
+### lending-services
 These constitute the LOS application. Click on [this link](lendingservices.md) for more details
 
-## others
+### others
 There are some more repos for Terraform Scrpts, APi spec etc. More details about it is on [this link](others.md)
 
 # Identity And Access Management

@@ -8,7 +8,7 @@ Few points to note
 - We will be passing the Mongodb connection string like `mongodb+srv://username:password@clusterURL` as an environment variable to our application
 
 ```
-docker run --name mongodb -p 27017:27017 -v C:\home\Projects\msr\data:/data/db -e MONGODB_INITDB_ROOT_USERNAME=admin -e MONGODB_INITDB_ROOT_PASSWORD=password mongodb/mongodb-community-server:7.0-ubi8
+docker run -d --name mongodb -p 27017:27017 -v C:\home\Projects\msr\data:/data/db -e MONGODB_INITDB_ROOT_USERNAME=admin -e MONGODB_INITDB_ROOT_PASSWORD=password mongodb/mongodb-community-server:7.0-ubi8
 ```
 
 To manage your MongoDB server or to access, import, and export your data, you can use a second MongoDB container from which you will run the necessary CLI tools. To open up a Mongo Shell session to your MongoDB Atlas server, use mongosh and specify the cluster URL.

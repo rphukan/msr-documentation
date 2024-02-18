@@ -14,8 +14,8 @@ docker run -d --name mongodb-mongodbinc -p 27017:27017 -v C:\home\Projects\msr\d
 To manage your MongoDB server or to access, import, and export your data, you can use a second MongoDB container from which you will run the necessary CLI tools. To open up a Mongo Shell session to your MongoDB Atlas server, use mongosh and specify the cluster URL.
 
 ```
-docker run -it \
---name mongosh mongodb/mongodb-community-server:7.0-ubi8 mongosh "mongodb://username:password@clusterURL/database"
+TDOD : verify on local
+docker run -it --name mongosh mongodb/mongodb-community-server:7.0-ubi8 mongosh "mongodb://username:password@clusterURL/database"
 ```
 
 ### The Open Source version : `docker pull mongo`
@@ -31,6 +31,7 @@ docker run -d --name mongodb-opensource -p 27017:27017 -v C:\home\Projects\msr\d
 The following example starts another MongoDB container instance and runs the mongosh (use mongo with 4.x versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```
+TDOD : verify on local
 docker run -it --network some-network --rm mongo mongosh --host some-mongo test
 ```
 

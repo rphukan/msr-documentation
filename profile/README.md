@@ -41,5 +41,5 @@ There are some more repos for Terraform Scrpts, APi spec etc. More details about
 We are using the open source [Keycloak](https://www.keycloak.org) for Identity and Access Management. More details about it is on [this link](identityprovider.md)
 
 # MongoDB
-Some of the applications within the org uses the MongoDB document database. More details about it is on [this link](mongodb.md)
+Some of the applications within the org use the MongoDB document database. More details about it is on [this link](mongodb.md)
 

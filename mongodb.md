@@ -25,7 +25,7 @@ Here is the link to the [docker hub](https://hub.docker.com/_/mongo)
 - The -v /my/own/datadir:/data/db part of the command mounts the /my/own/datadir directory from the underlying host system as /data/db inside the container, where MongoDB by default will write its data files.
 
 ```
-docker run -d --name mongodb-opensource -p 27017:27017 -v C:\home\Projects\msr\data\opensource:/data/db -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo
+docker run -d --name mongodb-opensource -p 27017:27017 -v C:\home\Projects\msr\data\opensource:/data/db -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo:7.0.5
 ```
 
 The following example starts another MongoDB container instance and runs the mongosh (use mongo with 4.x versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:

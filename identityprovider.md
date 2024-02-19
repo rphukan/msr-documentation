@@ -25,7 +25,7 @@ msrfintech/keycloak
 
 ## postgres
 For more details on docker `postgres` refer the links belwo
-[Official postgres image](https://hub.docker.com/_/postgres)
-[How to guide](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image)
+- [Official postgres image](https://hub.docker.com/_/postgres)
+- [How to guide](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image)
 
 ## keycloak

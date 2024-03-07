@@ -43,3 +43,6 @@ We are using the open source [Keycloak](https://www.keycloak.org) for Identity a
 # MongoDB
 Some of the applications within the org use the MongoDB document database. More details about it is on [this link](mongodb.md)
 
+# Terraform for GCP
+You can use Teraform to deploy the entire project on Google Kubernetese Engine. Refer the [msr-terraform-repo](https://github.com/msrfintech/msr-terraform-repo) for more details.
+

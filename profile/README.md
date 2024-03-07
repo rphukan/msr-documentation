@@ -20,22 +20,19 @@ and some other repos like
 
 # The mono repos
 ### security-libraries
-Some shared libraries (jars) for handling the security across different microservices. Visit [this link](securitylibraries.md) for more details.
+Some shared libraries (jars) for handling the security across different microservices. Visit [the security-libraries](https://github.com/msrfintech/security-libraries) for more details.
 
 ### core-services
-These are the core services which hanldes things like authentication, service discovery, config management, smart routing etc. Click [this link](coreservices.md) for more details.
+These are the core services which hanldes things like authentication, service discovery, config management, smart routing etc. Visti [core-services](https://github.com/msrfintech/core-services) for more details.
 
 ### shared-services
-Some common services shared across different applications within the org. More details on [this link](sharedservices.md)
+Some common services shared across different applications within the org. More details on [shared-services](https://github.com/msrfintech/shared-services)
 
 ### documents-service
-The document managment solution for the org. More details on [this link](documentsservice.md)
+The document managment solution for the org. More details on [documents-service](https://github.com/msrfintech/documents-service)
 
 ### lending-services
-These constitute the LOS application. Click on [this link](lendingservices.md) for more details
-
-### others
-There are some more repos for Terraform Scrpts, APi spec etc. More details about it is on [this link](others.md)
+These constitute the LOS application. Click on [lending-services](https://github.com/msrfintech/lending-services) for more details
 
 # Identity And Access Management
 We are using the open source [Keycloak](https://www.keycloak.org) for Identity and Access Management. More details about it is on [this link](identityprovider.md)

@@ -17,6 +17,8 @@ Few points to note
 ```
 docker run --detach --name mongodb --network msr --publish 27017:27017 -v C:\home\Projects\msr\data\mongodbinc:/data/db --env MONGODB_INITDB_ROOT_USERNAME=admin --env MONGODB_INITDB_ROOT_PASSWORD=password mongodb/mongodb-community-server:7.0-ubi8
 ```
+> [!WARNING]
+> The path for the volume is OS specific. The above was run from a Windows command Prompt
 
 To manage your MongoDB server or to access, import, and export your data, you can use a second MongoDB container from which you will run the necessary CLI tools. To open up a Mongo Shell session to your MongoDB Atlas server, use `mongosh` and specify the cluster URL.
 
@@ -32,8 +34,11 @@ Here is the link to the [docker hub](https://hub.docker.com/_/mongo)
 - The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
 
 ```
-docker run --detach --name mongodb --network msr --publish 27017:27017 -v C:\home\Projects\msr\data\opensource:/data/db --env MONGO_INITDB_ROOT_USERNAME=admin --env MONGO_INITDB_ROOT_PASSWORD=password mongo:7.0.5
+docker run --detach --name mongodb --network msr --publish 27017:27017 --volume C:\home\Projects\msr\data\\mongodb:/data/db --env MONGO_INITDB_ROOT_USERNAME=admin --env MONGO_INITDB_ROOT_PASSWORD=password mongo:7.0.5
 ```
+> [!WARNING]
+> The path for the volume is OS specific. The above was run from a Windows command Prompt
+
 
 The following example starts another MongoDB container instance and runs the `mongosh` (use mongo with 4.x versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 

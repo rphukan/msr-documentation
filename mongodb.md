@@ -15,7 +15,7 @@ Few points to note
 - We will be passing the Mongodb connection string like `mongodb+srv://username:password@clusterURL` as an environment variable to our application
 
 ```
-docker run --detach --name mongodb --network msr --publish 27017:27017 -v C:\home\Projects\msr\data\mongodbinc:/data/db --env MONGODB_INITDB_ROOT_USERNAME=admin --env MONGODB_INITDB_ROOT_PASSWORD=password mongodb/mongodb-community-server:7.0-ubi8
+docker run --detach --name mongodb --network msr --publish 27017:27017 --volume C:\home\Projects\msr\data\mongodbinc:/data/db --env MONGODB_INITDB_ROOT_USERNAME=admin --env MONGODB_INITDB_ROOT_PASSWORD=password mongodb/mongodb-community-server:7.0-ubi8
 ```
 > [!WARNING]
 > The path for the volume is OS specific. The above was run from a Windows command Prompt
@@ -23,9 +23,11 @@ docker run --detach --name mongodb --network msr --publish 27017:27017 -v C:\hom
 To manage your MongoDB server or to access, import, and export your data, you can use a second MongoDB container from which you will run the necessary CLI tools. To open up a Mongo Shell session to your MongoDB Atlas server, use `mongosh` and specify the cluster URL.
 
 ```
-TDOD : verify on local
 docker run -it --name mongosh mongodb/mongodb-community-server:7.0-ubi8 mongosh "mongodb://username:password@clusterURL/database"
 ```
+> [!CAUTION]
+> I have not tried this on my local yet.
+
 
 # The Open Source version : `docker pull mongo`
 Here is the link to the [docker hub](https://hub.docker.com/_/mongo)
@@ -43,9 +45,10 @@ docker run --detach --name mongodb --network msr --publish 27017:27017 --volume 
 The following example starts another MongoDB container instance and runs the `mongosh` (use mongo with 4.x versions) command line client against the original MongoDB container from the example above, allowing you to execute MongoDB statements against your database instance:
 
 ```
-TDOD : verify on local
 docker run -it --network msr --rm mongo mongosh --host mongodb test
 ```
+> [!CAUTION]
+> I have not tried this on my local yet.
 
 # Some usefull docker commands
 The docker exec command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your mongo container:
